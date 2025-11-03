@@ -16,5 +16,5 @@ set(DENSITY_SOURCES
     ${PROJECT_SOURCE_DIR}/src/algorithms/lion/core/lion_encode.c)
 
 add_library(density STATIC ${DENSITY_SOURCES})
-target_compile_options(density PRIVATE -std=c99 -Wall -Ofast -ggdb -Wno-unused-variable -Werror -fno-strict-aliasing -fvisibility=hidden -fPIC ${SANITIZER})
+target_compile_options(density PRIVATE -std=c99 -Wall -O3 -ggdb -Wno-unused-variable -Werror -fno-strict-aliasing -fvisibility=hidden -fPIC ${SANITIZER})
 target_link_libraries(density ${SANITIZER})
