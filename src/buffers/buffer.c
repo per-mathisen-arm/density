@@ -104,7 +104,7 @@ DENSITY_FORCE_INLINE density_context* density_allocate_context(const DENSITY_ALG
 DENSITY_WINDOWS_EXPORT void density_free_context(density_context *const context, void (*mem_free)(void *)) {
     if(mem_free == NULL)
         mem_free = free;
-    if(!context->dictionary_type)
+    if(context && !context->dictionary_type)
         mem_free(context->dictionary);
     mem_free(context);
 }
