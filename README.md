@@ -1,5 +1,11 @@
-﻿DENSITY
+This fork
+=========
+
+The [upstream](https://github.com/g1mv/density) version of this library suddenly switched the entire project to Rust. This fork remains C99.
+
+DENSITY
 ========
+
 Superfast compression library
 
 DENSITY is a free C99, open-source, BSD licensed compression library.
@@ -258,4 +264,3 @@ Related projects
 
 *   **SHARC** (archiver using density algorithms) [https://github.com/gpnuma/sharc](https://github.com/gpnuma/sharc)
 *   **fsbench-density** (in-memory transformations benchmark) [https://github.com/gpnuma/fsbench-density](https://github.com/gpnuma/fsbench-density)
-*   **densityxx** (c++ port of density) [https://github.com/charlesw1234/densityxx](https://github.com/charlesw1234/densityxx)
